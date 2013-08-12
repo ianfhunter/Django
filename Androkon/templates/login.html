@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<p>New User? <a href="{{baseUrl}}register/">Sign up now!</a></p>
+<!--<p>New User? <a href="{{baseUrl}}register/">Sign up now!</a></p> -->
+
 <form action="" method="post">
 <p>{% if message %}{{ message }}{% endif %}
 {% csrf_token %}

@@ -3,84 +3,18 @@
 		<link rel="shortcut icon" href="{{baseUrl}}static/img/favicon.ico"/>
 		<link href="{{baseUrl}}static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     		<link rel="stylesheet" type="text/css" media="screen" href="{{baseUrl}}static/css/bootstrap-datetimepicker.min.css">
-		
 		<style type="text/css">
-			html
-			{
-				min-height: 100%;
-			}
 			body
 			{
-        			background: #c0e2e4;
+				background: #c0e2e4;
 				background-image: url('{{baseUrl}}static/img/bkg{{ "12345" | random }}.png');
 				background-repeat: no-repeat;
 				background-position: bottom left;
 			}
-			input[type="text"]
-			{
-				height : 30px;
-			}
-			input[type="submit"]
-			{
-				color: #0c8acc;
-			}
-			form.prettybutton
-			{
-				display: inline;
-			}
-			div
-			{
-				font-family: arial;
-				font-size: 12px;
-				text-align: center;
-			}
-			div.register_div
-			{
-				font-family: arial;
-				font-weight: bold;
-				font-size: 16px;
-			}
-			ul.header
-			{
-				background-color: #AADDDD;
-				width: 100%;
-				margin:0;
-				padding:0;
-				display: inline-block;
-				list-style-type: none;
-			}
-			ul.errorlist
-			{
-				list-style-type: none;
-				color: red;
-				float: left;
-			}
-			li.topbar
-			{
-				float: left;
-			}
-			a.header
-			{
-				display:block;
-				width: 300px;
-				text-align: center;
-				font-family: arial;
-				font-weight: bold;
-				font-size: 16px;
-				text-decoration: none;
-			}
-			a.header:link,a.header:visited
-			{
-				background-color: #AADDDD;
-				color: #4466AA;
-			}
-			a.header:hover
-			{
-				background-color: #AADDDD;
-				color: #23ADBD;
-			}
 		</style>
-		{% block extrahead %}
+	    <link rel="stylesheet" type="text/css" media="screen" href="{{baseUrl}}static/css/main.css">
+		
+	{% block extrahead %}
 		{% endblock %}
     	</head>
 	<body>
@@ -104,6 +38,14 @@
 		<div class="container" id="PageContainer">
 			{% block content %}
 			{% endblock %}
+			
+			<p />&nbsp;<p />&nbsp;<p />
+				
+			<br href="http://tinyurl.com/androkon">Androkon</a> was created by <a href="http://ianfhunter.com/">Ian Hunter</a><br />
+			Web Interface provided by 'Flying Mongooses'
+			<p /><a href="http://knowyourmeme.com/memes/nyoron">What's with the girl?</a>
+
 		</div>
+
 	</body>
 </html>

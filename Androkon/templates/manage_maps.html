@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-	Here you can add maps of your conference venue so attendees know where to go for events.<br/>
+	Here you can add building plans & maps of your conference venue so attendees know where to go for events.<br/>
 	Maps must be uploaded as images (.jpg, .png, etc), and file must be less than 1mb.<br/><br/>
 
 	<form enctype="multipart/form-data" action="" method="post">
@@ -17,15 +17,15 @@
 	</form>
 	
 	{% if maps %}
-		<br/><br/>
-		Your maps for this con:<br/><br/>
+		<br /><br />
+		Your maps for this con:<br /><br />
 		{% for map in maps %}
 			<a href="{{baseUrl}}static/{{map.picture}}">
-				<img height=50 width=50 src="{{baseUrl}}static/{{map.picture}}">
+				<img height=50 width=50 src="{{baseUrl}}static/{{map.picture}}" />
 			</a> 
-			<form action="delete_map/{{map.id}}" class="prettybutton"><input type="submit" value="Delete" class="prettybutton"></form>
+			<form action="delete_map/{{map.id}}" class="prettybutton"><input type="submit" value="Delete" class="prettybutton" /></form>
 			<br/><br/>
-			 
+			</div>	<!--There's a /div missing somewhere, temp fix--> 
 		{% endfor %}
 	{% endif %}
 {% endblock %}

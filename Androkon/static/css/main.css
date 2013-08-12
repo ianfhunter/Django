@@ -1,0 +1,76 @@
+
+	html
+	{
+		min-height: 100%;
+	}
+	input[type="text"]
+	{
+		height : 30px;
+	}
+	input[type="submit"]
+	{
+		color: #0c8acc;
+	}
+	form.prettybutton
+	{
+		display: inline;
+	}
+	div
+	{
+		font-family: arial;
+		font-size: 12px;
+		text-align: center;
+	}
+	div.register_div
+	{
+		font-family: arial;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	div.register_div input
+	{
+		height: 30px;		
+	}
+
+	ul.header
+	{
+		background-color: #AADDDD;
+		width: 100%;
+		margin:0;
+		padding:0;
+		display: inline-block;
+		list-style-type: none;
+	}
+	ul.errorlist
+	{
+		list-style-type: none;
+		color: red;
+		float: left;
+	}
+	li.topbar
+	{
+		float: left;
+		width: 20%;
+	}
+	a.header
+	{
+		display:block;
+		width: 300px;
+		text-align: center;
+		font-family: arial;
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	a.header:link,a.header:visited
+	{
+		background-color: #AADDDD;
+		color: #4466AA;
+	}
+	a.header:hover
+	{
+		background-color: #AADDDD;
+		color: #23ADBD;
+	}
+
+	

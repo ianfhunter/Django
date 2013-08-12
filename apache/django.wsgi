@@ -2,7 +2,7 @@ import os
 import sys
 
 
-path = '/srv/webspace/wheybags/Django/Androkon/androkon'
+path = '/srv/webspace/ian/Django/Androkon/androkon'
 if path not in sys.path:
 	sys.path.append(path)
 
